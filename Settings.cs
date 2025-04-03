@@ -1164,7 +1164,7 @@ namespace FoodTweaker
 
         [Name("Recipe characteristics")]
         [Description("GAME DEFAULT: Game values will remain unchanged.\nREALISTIC: Based on real-world values.\nCUSTOM: Set your own values.")]
-        [Choice("Calories", "Vitamin C", "Hydration", "Prepping Time", "Cooking Time", "Warming Time")]
+        [Choice("Calories", "Vitamin C", "Hydration", "Cooking Time", "Prepping Time", "Warming Time")]
         public RecipeChoice propertyRecipe = RecipeChoice.Calories;
 
         //RECIPE CALORIES
@@ -1724,7 +1724,7 @@ namespace FoodTweaker
         [Name(     "Venison Pie")]
         [Description("Default Game Value: 20 mins\nRealistic Value: 20 mins")]
         [Slider(0, 120, NumberFormat = "{0:d} min")]
-        public int venisonMeatPiePrepTime = 0;
+        public int venisonMeatPiePrepTime = 20;
 
         [Name(     "Venison Stew")]
         [Description("Default Game Value: 20 mins\nRealistic Value: 10 mins")]
@@ -1939,9 +1939,9 @@ namespace FoodTweaker
         [Description("All cookware without Warming Up buff (Fish, Meat, Acorns & all recipes) will now get one")]
         public bool allItemHeating = false;
 
-        [Name(     "Buff Duration")]
+        [Name(     "Buff Duration (HOURS)")]
         [Description("How long the Warming Up buff lasts.\nGame Defaults: Pinnacle Peaches = 0.75,\nPork & Beans = 1.0, Tomato Soup = 1.0")]
-        [Slider(0.25f, 6, 24, NumberFormat = "{0:0.00} hours")]
+        [Slider(0.25f, 6, 24, NumberFormat = "{0:0.00}")]
         public float warmingUpDuration = 2;
 
         [Name(     "Buff Initial Warmth increase")]
@@ -1955,9 +1955,9 @@ namespace FoodTweaker
         [Description("GAME DEFAULT: No.\nREALITY: Canadian MREs (IMPs) do NOT have self-heating.\nUSA MREs DO have self-heating")]
         public bool mreHeating = false;
 
-        [Name(     "Buff Duration")]
+        [Name(     "Buff Duration (HOURS)")]
         [Description("How long the Warming Up buff lasts.\nGame Defaults: Pinnacle Peaches = 0.75,\nPork & Beans = 1.0, Tomato Soup = 1.0")]
-        [Slider(0.25f, 6, 24, NumberFormat = "{0:0.00} hours")]
+        [Slider(0.25f, 6, 24, NumberFormat = "{0:0.00}")]
         public float mreWarmingUpDuration = 2;
 
         [Name(     "Buff Initial Warmth increase")]
@@ -1969,17 +1969,17 @@ namespace FoodTweaker
         [Section("COOKING POT")]
         [Name("Recycled Can multiplier")]
         [Description("How efficient is the recylced can for cooking or boiling water\nGAME DEFAULT : 1 \nREALISTIC : 1 ")]
-        [Slider(0.1f, 2f, 19, NumberFormat = "{0:0.0}")]
+        [Slider(0.1f, 2f, 20, NumberFormat = "{0:0.0}")]
         public float recycledCan = 1f;
 
         [Name("Cooking Pot multiplier")]
         [Description("How efficient is the cooking pot for cooking or boiling water\nGAME DEFAULT : 0.8 \nREALISTIC : 1 ")]
-        [Slider(0.1f, 2f, 19, NumberFormat = "{0:0.0}")]
+        [Slider(0.1f, 2f, 20, NumberFormat = "{0:0.0}")]
         public float cookingPot = 0.8f;
 
         [Name("Skillet multiplier")]
         [Description("How efficient is the skillet for cooking or boiling water\nGAME DEFAULT : 0.8 \nREALISTIC : 1 ")]
-        [Slider(0.1f, 2f, 19, NumberFormat = "{0:0.0}")]
+        [Slider(0.1f, 2f, 20, NumberFormat = "{0:0.0}")]
         public float skillet = 0.8f;
 
         // WATER SECTION
