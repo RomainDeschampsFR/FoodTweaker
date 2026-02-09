@@ -17,8 +17,8 @@
 
 Modifying values in one section (Meat/Fish/Drinks/Other food/Recipe) will erase unsaved changes in other sections.
 You must therefore :
-1 - choose a preset for a section (click on confirm)
-2 - modify the values in this section (click on confirm again before moving on to another section).
+1. choose a preset for a section (click on confirm)
+2. modify the values in this section (click on confirm again before moving on to another section).
 
 I'm happy to accept any PR that will improve it.
 
