@@ -1,7 +1,4 @@
-﻿using Il2CppTLD.Cooking;
-using Il2CppTLD.IntBackedUnit;
-
-namespace FoodTweaker
+﻿namespace FoodTweaker
 {
     [HarmonyPatch(typeof(GearItem), nameof(GearItem.ApplyBuffs))]
     internal static class ApplyBuffs
